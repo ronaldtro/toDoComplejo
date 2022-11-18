@@ -1,0 +1,14 @@
+<!-- Formulario -->
+<div class="formulario">
+    <div class="form-group">
+        <label>Titulo</label>
+        <input type="text" [(ngModel)] = "nuevaTarea.titulo" />
+    </div>
+    <div class="form-group">
+        <label>Descripcion</label>
+        <input type="text" [(ngModel)] = "nuevaTarea.descripcion" />
+    </div>
+    <button (click) = "onClick()">Enviar</button>
+</div>
+
+<!-- {{ nuevaTarea | json }} -->
