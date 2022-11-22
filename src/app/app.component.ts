@@ -19,10 +19,14 @@ export class AppComponent {
 
   }
 
+  //Capturamos info de la etiqueta que envio la peticion -> $event:any
   onTareaCreada($event:any){
 
     //console.log($event);
+
+    //Ingresar elemento al vector tareas
     this.vecTareas.push($event);
+    //Mostrar vector por consola
     console.log(this.vecTareas);
     
   }
