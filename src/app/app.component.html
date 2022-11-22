@@ -1,11 +1,3 @@
-<div class="container">
-  <div class="izquierda">
-    <!-- Capturamos la variable que se envio desde el hijo - tareaCreada ->  CUANDO ESTA TAREA LLEGUE, QUE SE EJECUTE EL METODO onTareaCreada() -->
-    <app-formulario (tareaCreada)="onTareaCreada($event)"></app-formulario>
-  </div>
-  <div class="derecha">
-    <app-lista [tareas]="vecTareas"></app-lista>
-  </div>
-</div>
+
 
 <router-outlet></router-outlet>
