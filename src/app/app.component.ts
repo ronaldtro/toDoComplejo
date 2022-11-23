@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { Tarea } from './models/tarea.model';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
@@ -9,26 +10,16 @@ import { Tarea } from './models/tarea.model';
 
 export class AppComponent {
 
-  vecTareas: Tarea[];
-
-  title = 'Rutas';
-
-  constructor(){
-
-    this.vecTareas = [];
-
+  constructor(private router: Router){
+    
   }
 
-  //Capturamos info de la etiqueta que envio la peticion -> $event:any
-  onTareaCreada($event:any){
-
-    //console.log($event);
-
-    //Ingresar elemento al vector tareas
-    this.vecTareas.push($event);
-    //Mostrar vector por consola
-    console.log(this.vecTareas);
+  onClick(ruta: string){
     
+    //Probar el navigate de angular
+    console.log('Se realizan tareas previas');
+    this.router.navigate([ruta]);
+
   }
 
 }

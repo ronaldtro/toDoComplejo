@@ -4,14 +4,16 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { ListaComponent } from './components/lista/lista.component';
-import { FormsModule } from '@angular/forms'; //Para usar ngModel
+import { FormsModule } from '@angular/forms';
+import { InicioComponent } from './inicio/inicio.component'; //Para usar ngModel
 
 
 @NgModule({
   declarations: [
     AppComponent,
     FormularioComponent,
-    ListaComponent
+    ListaComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
+
 .lista{
     display: flex;
     flex-wrap: wrap; /* Que hace */
     justify-content: center;
 }
+
 
 .lista .tarea{
     border: 1px solid black;
@@ -10,13 +12,16 @@
     width: 50%;
 }
 
+
 .lista .tarea h3{
     margin-top: 10px;
 }
 
+
 .completa{
     background-color: green;
 }
+
 
 .incompleta{
     background-color: red;

@@ -1,14 +1,8 @@
-/*  margin -> Arriba: 20, izquierda: auto, abajo: 0, derecha: auto */
-.container{
-    width: 80%;
-    margin: 20px auto 0 auto; 
+.rutas{
     display: flex;
+    flex-direction: column;
 }
 
-.izquierda{
-    width: 40%;
-}
-
-.derecha{
-    width: 60%;
+.activo{
+    background-color: green;
 }
